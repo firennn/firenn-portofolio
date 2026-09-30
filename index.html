@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jason Firenze Portofolio</title>
 <meta name="description" content="Portfolio of Jason Firenze Trianto, Computer Science (Intelligent Systems) student at BINUS University — NLP, computer vision, and machine learning projects.">
-<meta name="theme-color" content="#09090b">
+<meta name="theme-color" content="#09090d">
 
 <meta property="og:title" content="Jason Firenze Trianto — AI Engineer Portfolio">
 <meta property="og:description" content="Computer Science student specializing in Intelligent Systems — NLP, computer vision, and machine learning projects.">
@@ -47,7 +47,7 @@
 <header class="hero" id="top">
   <div class="container hero-inner">
     <div>
-      <h1 class="reveal-line" style="animation-delay:0.02s">Building intelligent <span>apps &amp; systems</span>, one model at a time.</h1>
+      <h1 class="reveal-line" style="animation-delay:0.02s">Currently building <span>intelligent apps and systems.</span></h1>
       <p class="hero-lead reveal-line" style="animation-delay:0.1s">
         I'm Jason, a Computer Science student at BINUS University that specializes in Intelligent Systems
         and is focused on developing AI related projects. Experienced in developing both individual and
@@ -213,6 +213,11 @@
             trained via a distant-supervision pipeline built on a BPOM/EU-FIR aligned allergen dictionary
             so that the model understands context instead of just normal string matching.
           </p>
+          <dl class="results">
+            <div class="result"><dt>Micro-F1 on real photos</dt><dd>0.741</dd></div>
+            <div class="result"><dt>Allergen categories</dt><dd>8</dd></div>
+            <div class="result"><dt>Training samples</dt><dd>3,500</dd></div>
+          </dl>
           <div class="tag-row">
             <span class="tag">IndoBERT</span><span class="tag">Distant Supervision</span><span class="tag">OCR</span><span class="tag">seqeval</span>
           </div>
@@ -222,10 +227,10 @@
             <rect x="20" y="20" width="220" height="34" rx="4" stroke="var(--border-strong)" stroke-width="1.5"/>
             <text x="30" y="42" font-family="monospace" font-size="11" fill="var(--text-faint)">Komposisi: tepung terigu, susu...</text>
             <path d="M40 70 h180" stroke="var(--border)"/>
-            <rect x="40" y="90" width="70" height="26" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
-            <text x="48" y="107" font-family="monospace" font-size="10" fill="var(--accent)">GLUTEN</text>
-            <rect x="120" y="90" width="60" height="26" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
-            <text x="128" y="107" font-family="monospace" font-size="10" fill="var(--accent)">SUSU</text>
+            <rect x="40" y="90" width="70" height="26" rx="4" fill="var(--warm-soft)" stroke="var(--warm)" stroke-width="1.5"/>
+            <text x="48" y="107" font-family="monospace" font-size="10" fill="var(--warm)">GLUTEN</text>
+            <rect x="120" y="90" width="60" height="26" rx="4" fill="var(--warm-soft)" stroke="var(--warm)" stroke-width="1.5"/>
+            <text x="128" y="107" font-family="monospace" font-size="10" fill="var(--warm)">SUSU</text>
             <path d="M60 140c40-20 100-20 140 0" stroke="var(--border-strong)" stroke-width="1.5"/>
             <circle cx="60" cy="140" r="3.5" fill="var(--text-faint)"/>
             <circle cx="200" cy="140" r="3.5" fill="var(--text-faint)"/>
@@ -251,6 +256,11 @@
             A full-stack web app that manages your wardrobe and generates outfit recommendations with
             Gemini 2.5 Flash, based on occasion, season, and mood.
           </p>
+          <dl class="results">
+            <div class="result"><dt>Unit tests passing</dt><dd>68/68</dd></div>
+            <div class="result"><dt>Team members</dt><dd>4</dd></div>
+            <div class="result"><dt>Deployed on Vercel</dt><dd>Live</dd></div>
+          </dl>
           <div class="tag-row">
             <span class="tag">Gemini API</span><span class="tag">Supabase</span><span class="tag">Jest</span><span class="tag">Vercel</span>
           </div>
@@ -275,6 +285,11 @@
             A Streamlit app that automatically fixes under/over exposed photos using CLAHE, guided by two
             ML models trained on the LOL dataset: an exposure classifier and a CLAHE parameter predictor.
           </p>
+          <dl class="results">
+            <div class="result"><dt>Exposure classifier accuracy</dt><dd>96.3%</dd></div>
+            <div class="result"><dt>SSIM vs. baseline GHE</dt><dd>+2.0%</dd></div>
+            <div class="result"><dt>Tile-size predictor accuracy</dt><dd>99.6%</dd></div>
+          </dl>
           <div class="tag-row">
             <span class="tag">OpenCV</span><span class="tag">CLAHE</span><span class="tag">Random Forest</span><span class="tag">Streamlit</span>
           </div>
@@ -300,6 +315,11 @@
             color histogram features across four classical ML models, chosen deliberately over a heavier
             deep learning approach.
           </p>
+          <dl class="results">
+            <div class="result"><dt>Best accuracy (tuned SVM)</dt><dd>91%</dd></div>
+            <div class="result"><dt>End-to-end latency</dt><dd>&lt;16ms</dd></div>
+            <div class="result"><dt>Feature dimensions</dt><dd>8,196</dd></div>
+          </dl>
           <div class="tag-row">
             <span class="tag">Scikit-learn</span><span class="tag">HOG</span><span class="tag">PCA</span><span class="tag">LIME</span>
           </div>
@@ -359,7 +379,7 @@
   <div class="container contact-wrap">
     <div>
       <h2>Let's work together!</h2>
-      <p style="color:var(--text-dim);margin-top:14px;max-width:46ch;">
+      <p class="contact-lead">
         Contact me through any of these channels.
       </p>
     </div>
