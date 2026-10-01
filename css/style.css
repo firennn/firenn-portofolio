@@ -584,8 +584,24 @@ section:last-of-type::after,
 
 .project-links {
   display: flex;
+  align-items: center;
   gap: 8px;
   flex-shrink: 0;
+}
+
+.badge-published {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 8px;
+  vertical-align: middle;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--warm);
+  background: var(--warm-soft);
+  border: 1px solid var(--warm-line);
+  border-radius: var(--radius-sm);
 }
 
 .project-row p.desc {
